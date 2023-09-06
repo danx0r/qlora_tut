@@ -1,0 +1,8 @@
+bitsandbytes 
+transformers 
+datasets 
+accelerate 
+loralib 
+einops 
+xformers
+git+https://github.com/huggingface/peft.git
