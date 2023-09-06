@@ -5,4 +5,5 @@ accelerate
 loralib 
 einops 
 xformers
+scipy
 git+https://github.com/huggingface/peft.git
