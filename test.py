@@ -67,6 +67,8 @@ from datasets import load_dataset
 dataset_name = 'Amod/mental_health_counseling_conversations'
 dataset = load_dataset(dataset_name, split="train")
 
+dataset = dataset.shuffle().map(generate_and_tokenize_prompt)
+
 training_args = transformers.TrainingArguments(
     auto_find_batch_size=True,
     num_train_epochs=4,
@@ -87,4 +89,3 @@ trainer = transformers.Trainer(
 model.config.use_cache = False
 
 trainer.train()
-
