@@ -19,13 +19,13 @@ In this notebook, we will learn together how to load a large model in 4bit (`gpt
 [In the general usage notebook](https://colab.research.google.com/drive/1ge2F1QSK8Q7h0hn3YKuBCOAS0bK8E0wf?usp=sharing), you can learn how to propely load a model in 4bit with all its variants.
 
 If you liked the previous work for integrating [*LLM.int8*](https://arxiv.org/abs/2208.07339), you can have a look at the [introduction blogpost](https://huggingface.co/blog/hf-bitsandbytes-integration) to lean more about that quantization method.
-"""
 
 !pip install -q -U bitsandbytes
 !pip install -q -U git+https://github.com/huggingface/transformers.git
 !pip install -q -U git+https://github.com/huggingface/peft.git
 !pip install -q -U git+https://github.com/huggingface/accelerate.git
 !pip install -q datasets
+"""
 
 """First let's load the model we are going to use - GPT-neo-x-20B! Note that the model itself is around 40GB in half precision"""
 
