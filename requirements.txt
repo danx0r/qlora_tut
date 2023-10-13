@@ -1,6 +1,8 @@
+ipython
 scipy
 bitsandbytes
 transformers
 peft
 accelerate
 datasets
+
